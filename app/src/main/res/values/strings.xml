@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProMéxico</string>
+
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Maps APi key -->
+    <string name="google_maps_key">AIzaSyC9M7VDNvEdSpYdm4MuxxSuvhbJxSnqWWI</string>
+
+
+    <!-- Dialog fragment -->
+    <string name="text_btn_ok">Aceptar</string>
+
+
+</resources>

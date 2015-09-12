@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuestionsActivity"
+    android:background="#C0E6C9"
+    >
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/widget_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/toolbar_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atrás"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/toolbar_sincronizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sincronizar"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_oficinas"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_nombre_atendio"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Nombre de la persona que lo atendió ?"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="10"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_trato"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="El trato fue bueno?"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="10"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_info_ayuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="La información fue de ayuda?"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="10"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_lugar_limpio"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="El Lugar se encontraba limpio?"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:maxLength="10"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_aceptar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Aceptar"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
